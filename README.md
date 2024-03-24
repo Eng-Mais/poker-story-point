@@ -1,2 +1,2 @@
 # poker-story-point
-poker for story point 
+planning poker online
