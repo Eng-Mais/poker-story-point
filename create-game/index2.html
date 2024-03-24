@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Game</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="main2.js" defer></script>
+</head>
+<body>
+<div class="top-section">
+    <div class="image-container">
+        <img src="pics/poker.jpg" alt="poker logo">
+    </div>
+    <div class="left-section">   
+        <div class ="rate-history" id="rateHistory">
+            <div class="text-container" id="title">
+            <h2>Rate history</h2>
+            </div>
+            <div class="image-icon" id="arrowIcon">
+            <img src="pics/arrow_drop.jpg" alt="arrow list">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mainpopup" class="mainpop_up">
+    <form>
+        <input type="text" class="GameName" id="gameName" name="gameName" placeholder="Game's name"><br><br>
+        
+        <div class="dropdown">
+            <input type="text" id="createGame" class="createGame" placeholder="Voting system" onclick="toggleDropdown()">
+            <div class="dropdown-content" id="gameOptions">
+                <div class="game1" onclick="selectOption('Fibonacci (0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89)')">Fibonacci (0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89)</div>
+                <div class="game2" onclick="selectOption('Powers of 2 (0, 1, 2, 4, 8, 16, 32, 64)')">Powers of 2 (0, 1, 2, 4, 8, 16, 32, 64)</div>
+                <div class="game3" onclick="selectOption('15 (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)')">15 (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)</div>
+
+            </div>
+        </div>
+        
+        <button class="createBtn" type="button" onclick="navigateToNextPage()"> Create game </button>
+
+    </form>
+</div>
+
+</body>
+</html>

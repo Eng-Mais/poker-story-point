@@ -1,0 +1,141 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Point Voting</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    
+</head>
+<body>
+
+    <div class="overlay" id="overlay">
+        <div id="popup" class="pop_up">
+            <div class="login-container">
+                <p class="login-title">Choose your display name</p>
+                <form action="#">  <input type="text" class="login-input" placeholder="Enter Display Name" name="display_name" required>
+                    <button type="submit" class="login-button" id="login_btn">Continue to game</button>
+                </form>
+        
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="top-section"> 
+            <div class="image-container">
+                <img src="pics/poker.jpg" alt="poker logo">
+            </div>
+            <div class="left-section">   
+                <div class ="rate-history" id="rateHistory">
+                    <div class="text-container" id="title">
+                    <h2>Rate history</h2>
+                    </div>
+                    <div class="image-icon" id="arrowIcon">
+                    <img src="pics/arrow_drop.jpg" alt="arrow list">
+                    </div>
+                </div>
+                <div class="sub_menu_wrap" id="subMenu">
+                    <div class="sub_menu">
+                        <img src="pics/settings.jpg">
+                        <p>Game Settings</p>
+                    </div>
+                    <div class="sub_menu">
+                        <img src="pics/voting.jpg">
+                        <p>Voting history</p>
+                    </div>
+                </div>
+            </div> <!--end of left section-->
+            <div class="right_section">
+                <div class="register">
+                    <div class="text_user">
+                        <p>Sign up</p>
+                    </div>
+                    <div class="text_user">
+                        <p>Log in </p>
+                    </div>
+                </div>
+
+                
+                <div class="user-card" id="userNameDisplay">
+                <div class="user-circle">
+                    <p id="userInitial">#</p>
+                </div>
+                <div class="user-header">
+                    <h2 id="userName">#</h2>
+                </div>
+                <div class="image-icon">
+                    <img src="pics/arrow_drop.jpg" alt="arrow list">
+                </div>
+                </div>
+                <div class="invitation-box">
+                    <img src="pics/invitation.jpg" alt="invitation">
+                    <div class="text">
+                        <p>Invite players</p>
+                    </div>
+                </div>
+                <div class="issues">
+                    <img src="pics/issues.jpg" alt="issues">
+
+                </div> 
+            </div> <!--end of right section-->
+        </div> <!--end of top section-->
+    </div>
+    <div class="middle_container">
+        <div class="top_middle" id="topMiddle">  
+            <p>Feeling lonely?</p>
+            <img src="pics/sleeping_emoji.jpg">
+        </div>
+        <a href="#" class="invitation_middle">Invite players</a>
+        <div id="countdownElement" style="display: none;"></div>
+        <div id="blue_deck" class="deck">
+            <div class="text_card">
+                <p>Pick your cards!</p>
+            </div>
+        </div>
+        <div class="picked_card" id="cardPicked">
+           
+        </div>
+        <div class="user" id="user">
+            <p id="user_name"></p>
+        </div>
+    </div><!--end of middle section-->
+
+</body>
+<footer>
+    <div id="footerContent"> 
+        <div class="bottom_section" id="bottom_sec">
+            <div class="bottom_title">
+                <p>Choose your card</p>
+                <img src="pics/finger__emoji.jpg">
+            </div>
+        </div>
+        <div id="cardContainer"></div>
+    </div>
+
+    <div class="voting_Results" id="votingResults">
+        <div class="votingleft">
+            <div class="line" id="line">
+            </div>
+            <div class="voted_card" id="voted_card">
+                <p></p>
+            </div>
+            <div class="vote_count"><p>1 vote</p></div>
+        </div>
+        <div class="votingRight">
+            <div class="average">
+                <p>Average:</p>
+                <h1></h1>
+            </div>
+            <div class="Agreement">
+                <p>Agreement:</p>
+                <img src="pics/agreement.png">
+            </div>
+        </div>
+
+
+
+    </div>
+</footer>
+
+
+
+</html>
